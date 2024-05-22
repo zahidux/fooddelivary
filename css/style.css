@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+/* common css end */
+nav {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: aliceblue;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-wrapper h2 {
+  font-size: 32px;
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  color: #f40469;
+}
+.nav-wrapper a {
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  color: #000000;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+.nav-wrapper a:hover {
+  color: #f40469;
+}
+/* nav css end */
+#banner {
+  padding-top: 145px;
+  padding-bottom: 188px;
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-wrapper h1 {
+  font-size: 56px;
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.location-wrapper {
+  display: flex;
+  max-width: 815px;
+  margin-top: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.location {
+  align-items: center;
+  display: flex;
+  min-width: 170px;
+  justify-content: center;
+  position: relative;
+}
+.location::after {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: #c5cbd1;
+}
+.location i {
+  color: #f40469;
+  font-size: 24px;
+}
+.location h6 {
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  margin-left: 11px;
+  color: #000000;
+}
+.search-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+.search-btn {
+  min-width: 130px;
+  background-color: #f40469;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 18px 0;
+  position: relative;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+.search-btn:hover {
+  opacity: 0.7;
+}
+/* banner css end */
+#join {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+.join-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.join-image {
+  overflow: hidden;
+  max-width: 605px;
+}
+.join-image img {
+  width: 100%;
+}
+.join-text {
+  max-width: 400px;
+}
+.join-text h3 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #000000;
+}
+.join-text p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 31px;
+}
+.join-btn {
+  margin-top: 34px;
+  padding: 16px 25px;
+  background-color: #f40469;
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+.join-btn:hover {
+  opacity: 0.7;
+}
+/* join css end */
+/* #image-card{
+
+} */
+.image-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image-card-header h4 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+.image-card-header ul {
+  display: flex;
+  align-items: center;
+}
+.image-card-header ul li {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+.image-card-header-icon {
+  color: #000000;
+  margin-left: 8px;
+}
+.image-card-wrapper {
+  margin-top: 27px;
+  display: flex;
+  gap: 0 20px;
+  flex-wrap: wrap;
+}
+.image-card-left {
+  max-width: 400px;
+}
+.image-card-left-img {
+  overflow: hidden;
+  border-radius: 32px;
+}
+.image-card-left-img img {
+  width: 100%;
+}
+.image-card-middle {
+  max-width: 400px;
+}
+.image-card-middle-top-img {
+  border-radius: 32px;
+  overflow: hidden;
+}
+.image-card-middle-top-img img {
+  width: 100%;
+}
+.image-card-middle-bottom {
+  margin-top: 46px;
+}
+.image-card-middle-bottom-img {
+  overflow: hidden;
+  border-radius: 32px;
+}
+.image-card-middle-bottom-img img {
+  width: 100%;
+}
+.image-card-text {
+  max-width: 335px;
+  margin-top: 14px;
+}
+.image-card-text h5 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+.image-card-inner-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.image-card-inner-text-left {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.image-card-inner-text-left p {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 8px;
+}
+.image-card-inner-text-right {
+  display: flex;
+  align-items: center;
+}
+.image-card-inner-text-right p {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 8px;
+}
+
+/*  */
+.image-card-right {
+  max-width: 400px;
+}
+
+.image-card-right-top-img {
+  border-radius: 32px;
+  overflow: hidden;
+}
+.image-card-right-top-img img {
+  width: 100%;
+}
+.image-card-right-bottom {
+  margin-top: 46px;
+}
+.image-card-right-bottom-img {
+  border-radius: 32px;
+  overflow: hidden;
+}
+.image-card-right-bottom-img img {
+  width: 100%;
+}
+/* image-card css end */
+#work {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.work-wrapper {
+  max-width: 928px;
+  margin: 0 auto;
+}
+.work-header h3 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #000000;
+  text-align: center;
+}
+.work-item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 32px;
+  justify-content: space-between;
+  margin-top: 43px;
+  background-color: #fefefe;
+}
+.work-left-item {
+  max-width: 288px;
+  border-radius: 32px;
+  padding-top: 40px;
+  box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.1);
+  padding-bottom: 58px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.work-middle-item {
+  max-width: 288px;
+  border-radius: 32px;
+  padding-top: 40px;
+  box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.1);
+  padding-bottom: 58px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.work-right-item {
+  max-width: 288px;
+  border-radius: 32px;
+  padding-top: 40px;
+  box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.1);
+  padding-bottom: 58px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.work-item-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+  width: 96px;
+  margin: 0 auto;
+  background-image: url("../images/work-card-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.work-item-icon {
+  color: #f40469;
+  font-size: 50px;
+  transform: translateY(-25px);
+}
+.work-item-text {
+  margin-top: 15px;
+  text-align: center;
+}
+.work-item-text h3 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #f40469;
+}
+.work-item-text p {
+  margin-top: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: #000000;
+}
+.chicken {
+  transform: translateY(-25px) rotate(-42deg);
+}
+/* work css end */
+/* #food-details{
+
+} */
+.food-details-wrapper {
+  padding-top: 55px;
+  padding-bottom: 80px;
+  padding-left: 104px;
+  background-image: url("../images/food-details-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 32px;
+  width: 100%;
+}
+.food-details-text h4 {
+  font-family: "Jost", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 608px;
+}
+.food-details-btn-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 57px;
+}
+.food-details-left-btn {
+  padding: 16px 26px;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #283646;
+  font-size: 21px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+
+.food-details-left-btn:hover {
+  color: #f40469;
+}
+.food-details-right-btn a {
+  font-size: 21px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 32px;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+.food-details-right-btn a:hover {
+  color: #000000;
+}
+/* food details css end */
+#testimonial {
+  padding-top: 103px;
+
+  /* padding-bottom: 103px; */
+}
+.testimonial-header {
+  text-align: center;
+}
+.testimonial-header h3 {
+  font-family: "Jost", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #000000;
+}
+.testimonial-header p {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+}
+.testimonial-card {
+  margin-top: 60px;
+  background-color: aquamarine;
+}
+.testimonial-card-logo {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 927px;
+  overflow: hidden;
+}
+.testimonial-card-logo img {
+  width: 100%;
+}
+/* testimonial css end */
+#footer {
+  margin-top: 110px;
+  position: relative;
+}
+.footer-header-logo h2 {
+  font-size: 32px;
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  color: #f40469;
+}
+.footer-header-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-menu-flex {
+  margin-left: 120px;
+  display: flex;
+  max-width: 491px;
+  gap: 0 40px;
+  flex-wrap: wrap;
+}
+.footer-menu-flex li a {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+.footer-menu-flex li a:hover {
+  color: #f40469;
+}
+.footer-main {
+  background-color: #f8f9fa;
+  margin-top: 42px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.footer-shape-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.footer-main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* max-width: 860px; */
+}
+.footer-main-left {
+  width: auto;
+}
+
+.footer-main-left ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: #000000;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+.footer-main-left ul li a:hover {
+  color: #f40469;
+}
+.footer-main-right {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+.footer-main-right ul {
+  text-align: left;
+}
+.footer-main-right ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: #000000;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+.footer-main-right ul li a:hover {
+  color: #f40469;
+}
+.number {
+  margin-top: 20px;
+}
+/* responsive css start */
+@media screen and (max-width: 575px) {
+  nav {
+    padding: 10px 10px;
+  }
+  /* nav responsive css end */
+  #banner {
+    padding: 80px 10px 80px 10px;
+  }
+
+  .banner-wrapper h1 {
+    font-size: 40px;
+  }
+  /* banner responsive css end */
+  #join {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .join-wrapper {
+    display: block;
+  }
+  .join-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* join responsive css end */
+  #image-card {
+    padding: 0 10px;
+  }
+  .image-card-header {
+    flex-wrap: wrap;
+  }
+  .image-card-header h4 {
+    font-size: 30px;
+  }
+  .image-card-header ul {
+    justify-content: center;
+    width: 100%;
+  }
+  .image-card-wrapper {
+    display: block;
+  }
+  .image-card-left {
+    max-width: 100%;
+  }
+  .image-card-text {
+    margin-top: 10px;
+  }
+  .image-card-middle {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .image-card-right {
+    margin-top: 15px;
+  }
+
+  .image-card-middle-bottom {
+    margin-top: 15px;
+  }
+  .image-card-right {
+    max-width: 100%;
+  }
+  /* image resposive css end */
+  #work {
+    padding: 50px 10px 50px 10px;
+  }
+  .work-item-wrapper {
+    margin-top: 15px;
+    display: block;
+  }
+  .work-left-item {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .work-middle-item {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .work-right-item {
+    max-width: 100%;
+  }
+  /* work responsive css end */
+  #testimonial {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* testimonial responsive css end */
+  #footer {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-shape-image {
+    display: none;
+  }
+  .footer-menu-flex {
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    gap: 0 10px;
+  }
+  .footer-main {
+    margin-top: 40px;
+  }
+  .footer-main-wrapper {
+    flex-wrap: nowrap;
+  }
+}
+/* max-width 575px responsive end */
+@media screen and (max-width: 767px) {
+/* body{
+  background-color: red;
+} */
+}
